@@ -10,7 +10,8 @@ const serializeNote = (note) => ({
   id: note.id,
   note_name: xss(note.note_name),
   content: xss(note.content),
-  folder_id: note.folder_id
+  folder_id: note.folder_id,
+  date_created: note.date_created
 });
 
 notesRouter
